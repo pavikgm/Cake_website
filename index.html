@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+
+    <!-- font awesome cdn -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css linksheet  -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section page -->
+     <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-basket-shopping"></i>Cake's For You</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Review</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fa-solid fa-bars"></div>
+            <div id="Search-btn" class="fa-solid fa-magnifying-glass"></div>
+            <div id="cart btn" class="fa-solid fa-cart-shopping"></div>
+            <div id="login btn" class="fa-solid fa-user"></div>    
+        </div>
+     </header>
+
+     <!-- HOME SECTION -->
+
+    <section class="home" id="home">
+        <div class="slides-container">
+
+            <div class="slide active">
+                <div class="content">
+                    <span>Have A delicious cake</span>
+                    <h3>Upto 50% off</h3>
+                    <a href="#" class="btn">shop now</a>    
+                </div>
+                <div class="img">
+                    <img src="image/chocoCake001.png"  alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>Have A delicious cake</span>
+                    <h3>Upto 50% off</h3>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="img">
+                    <img src="image/chococake-2.png" width="300px" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>Have A delicious cake</span>
+                    <h3>Upto 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="img">
+                    <img src="image/chocoCake003.png" width="320px" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" onclick="prev()"></div>
+    </section>
+
+    <!-- About Cake Offer -->
+
+    <section class="banner-container">
+        <div class="banner">
+            <img src="image/banner -1.jpg" alt="">
+            <div class="content">
+            <span>limited offer</span>
+            <h3>Upto 30% off..</h3>
+            <a href="#" class="btn">Visit Us</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="image/banner-2.JPG" alt="">
+        <div class="content">
+        <span>limited offer</span>
+        <h3>Upto 30% off..</h3>
+        <a href="#" class="btn">Visit Us</a>
+    </div>
+</div>
+<div class="banner">
+    <img src="image/banner- 3.jpg" alt="">
+    <div class="content">
+    <span>limited offer</span>
+    <h3>Upto 30% off..</h3>
+    <a href="#" class="btn">Visit Us</a>
+</div>
+</div>    
+    </section>
+
+     <!-- product -->
+
+     <section class="products">
+        <h1 class="title">our <span>Products</span> <a href="#"> view all >></a></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/product-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Truffle mix cake</h3>
+                <div class="price">Rs.1000</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>>
+                </div>
+                <div class="img">
+                    <img src="image/P2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Strawberry choco cake</h3>
+                <div class="price">Rs.950</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/product-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Choco Fruit cake</h3>
+                <div class="price">Rs.1050</div>
+                <div class="star">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/product-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Redvelvet cake</h3>
+                <div class="price">Rs.950</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/p5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>PineApple cake</h3>
+                <div class="price">Rs.940</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/p1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Chocolate Truffle cake</h3>
+                <div class="price">Rs.1500</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/product-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pistah cake</h3>
+                <div class="price">Rs.500</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/product-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Black Forest cake</h3>
+                <div class="price">Rs.900</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="img">
+                    <img src="image/product-9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Butterstoch cake</h3>
+                <div class="price">Rs.800</div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- about -->
+     <div class="heading-2">
+        <h1>About Us</h1>
+     </div>
+
+     <section class="about">
+        <div class="img">
+            <img src="image/about.cake.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <span>!..Welcome All !..</span>
+            <h1>Cake-With-Licious Product's</h1>
+            <p>Chocolate cake is widely regarded as a beloved and classic dessert that appeals to a broad range of tastes. Here are some general opinions and sentiments commonly associated with chocolate cake.Chocolate cake is a favorite for many people around the world. Its rich and indulgent flavor makes it a go-to choice for celebrations such as birthdays, weddings, and holidays.Many consider chocolate cake a comfort food.</p>
+
+            <p>Its richness can be overwhelming for some, especially if the cake is dense or if it has a heavy frosting. Pairing it with lighter elements, like fresh fruit or whipped cream,can help balance this.</p>
+
+            <a href="#" class="btn">Read More..</a>
+        </div>
+     </section>
+
+     <!-- gallery -->
+
+     <div class="Gallery">
+        <h1>Gallery</h1>
+     </div>
+
+     <section class="gallery">
+        <h1 class="title">our <span>Gallery</span> <a href="#"> View All >></a></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/image-1.jpg" alt="">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-share-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/image- 2.jpg" alt="">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-share-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/image -3.jpg" alt="">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-share-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/image-4.jpg" alt="">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-share-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/image-5.jpg" alt="">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-share-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/image-6.jpg" alt="">
+                <div class="icons">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-share-alt"></i></a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Review -->
+      <div class="Customer">
+        <h1>Customer's Review</h1>
+      </div>
+
+      <section class="info-container">
+
+        <div class="info">
+            <img src="image/icons.jpg" alt="">
+            <div class="content">
+                <h3>Quik Delivery</h3>
+                <span>Within 30 minutes</span>
+            </div>
+        </div>
+        
+        <div class="info">
+            <img src="image/Availble.jpg" alt="">
+            <div class="content">
+                <h3>24/7 Available</h3>
+                <span>Within 30 minutes</span>
+            </div>
+        </div>
+
+        <div class="info">
+            <img src="image/payment.jpg" alt="">
+            <div class="content">
+                <h3>Pay Easy</h3>
+                <span>Within 30 minutes</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+
+        <div class="box">
+            <div class="user">
+                <img src="image/Review-3.jpg" alt="">
+                <div class="info">
+                    <h3>Ritika Singh</h3>
+                    <span>Sweetiest cake ever i taste it before.</span>
+                </div>
+            </div>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <div class="user">
+                <img src="image/Review-5.jpg" alt="">
+                <div class="info">
+                    <h3>John Doe</h3>
+                    <span>Quantity of the cake and cream is very delicious.</span>
+                </div>
+            </div>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <div class="user">
+                <img src="image/Review-4.jpg" alt="">
+                <div class="info">
+                    <h3>Abi agrerwal</h3>
+                    <span>Delicious cake with nuts and choco crushes, to visited again your shop.</span>
+                </div>
+            </div>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <div class="user">
+                <img src="image/R1.jpg" alt="">
+                <div class="info">
+                    <h3>Abijith Singh</h3>
+                    <span>Awesome cake with fill up on creame essene, cake quantity is afforable with price.</span>
+                </div>
+            </div>
+            <p></p>
+        </div>
+
+        <div class="box">
+            <div class="user">
+                <img src="image/img5.jpg" alt="">
+                <div class="info">
+                    <h3>Anand parambal</h3>
+                    <span>Cake is delicious taste and might very effective work of delivery on time</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <img src="image/Img6.jpg" alt="">
+                    <div class="info">
+                        <h3>Diya Menon</h3>
+                        <span>Delicious taste and might very effective work of delivery on time</span>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <div class="heading-contact">
+        <h1>Contact Us..</h1>
+      </div>
+
+      <section class="contact">
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fa-solid fa-phone"></i>
+                <h1>Contact Number</h1>
+                <p>+91 6383966649</p>          
+            </div>
+
+            
+            <div class="icons">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>Email With Us</h1>
+                <p>Cakedarz@gmail.com</p>          
+            </div>
+
+            
+            <div class="icons">
+                <i class="fa-solid fa-address-book"></i>
+                <h1>Erode-GH</h1>
+                <p>No.12,karur ByPass Road,Kollampallayam</p>          
+            </div>
+        </div>
+
+        <div class="row">
+            <form action="">
+                <h3>Keep In Touch</h3>
+                <div class="inputBox">
+                <input type="text" placeholder="Enter Your Name" class="box">
+                <input type="text" placeholder="Enter Your Name" class="box">
+            </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Enter Your Number" class="box">
+                    <input type="number" placeholder="Enter Your Subject" class="box">
+                    </div>
+                    <textarea placeholder="Your message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="send message" class="btn">
+            </form>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501011.59627596394!2d77.0497056421842!3d11.17629823768131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f919030428d%3A0x5dc319e987c100c4!2sErode%20Nellai%20Karupatti%20Coffee!5e0!3m2!1sen!2sin!4v1719668969254!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <div class="space"></div>
+
+    <!-- footer -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>On Screen links</h3>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> Home</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> Shop</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> About</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> Review's</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Additional links</h3>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> My order</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> My Favourite</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> My Wish</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> My Account</a>
+                <a href="#"> <i class="fa-solid fa-right-long"></i> User's Pages</a>   
+            </div>
+
+            <div class="box">
+                <h3>Additional links</h3>
+                <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> You-tube</a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>   
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe Us for Latest Update</p> 
+                <form action=""> 
+                <input type="email" placeholder="Enter Email"> 
+                <input type="submit" value="subscribe"  class="btn">
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- custom js file -->
+     <script src="script.js">
+
+     </script>
+</body>
+</html>
